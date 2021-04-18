@@ -1,0 +1,12 @@
+<article class="main__article">
+    <img src="/images/<%= product.image %>" alt="Cafetera" class="product_img">
+
+    <button class="article__boton"><i class="fas fa-truck iconoCamion"></i></button>
+
+    <div class="main-article-detalle">
+        <p class="precio">$ <%= product.price %></p>
+        <p class="descuentos"><%= product.descuento%> % off</p>
+    </div>
+
+    <h4><%= product.name %></h4>
+</article>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+    <%- include('partials/head') %>
+
+<body>
+    <%- include('partials/header') %>
+    <form action="resultado.html" method="post" class="create_register">
+
+        <div class="register-nombre">
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre y Apellido" minlength="4" class="control-register">
+        </div>
+        <div class="nombreDeUsuario">
+            <input type="text" name="nombreDeUsuario" id="nombreDeUsuario" placeholder="Nombre de usuario" minlength="4"
+                class="control-register">
+        </div>
+        <div class="fechaDeNacimiento">
+            <label class="fechadenacimiento">Fecha de nacimiento</label><br>
+            <input type="date" name="fecha" value="2021-04-02" class="control-register">
+        </div>
+        <div class="Domicilio">
+            <input type="text" name="Domicilio" id="Domicilio" placeholder="Domicilio" class="control-register">
+        </div>
+        <div class="Perfil de usuario">
+            <label class="perfilDeUsuario">Perfil de usuario</label></br>
+            <select name="perfilDeUsuario" class="control-register">
+                <option value="comprador">Comprador</option>
+                <option value="vendedor">Vendedor</option>
+            </select>
+        </div>
+        <div class="intereses">
+            <label class="label-intereses">Intereses</label></br>
+            <label><input type="checkbox" name="intereses">Electro</label>
+            <label><input type="checkbox" name="intereses">Moda</label>
+            <label><input type="checkbox" name="intereses">Hogar</label>
+            <label><input type="checkbox" name="intereses">Jugueteria</label>
+            <label><input type="checkbox" name="intereses">Vida Sana</label>
+
+        </div>
+        <div class="fotoDeUsuario">
+            <label class="seleccioneFoto">Seleccionar una foto para el perfil </label>
+            <input type="file" name="avatar" accept=".jpg" multiple class="control-register">
+
+
+
+        </div>
+
+        <div class="clave-register">
+            <input type="password" name="clave-register" id="clave" placeholder="Elegi tu contraseña"
+                class="control-register">
+
+
+        </div>
+        <div class="ConfirmaClave-register">
+            <input type="password" name="ConfirmarClave-register" id="Confirmarclave" placeholder="Confirmar contraseña"
+                class="control-register">
+
+
+
+        </div>
+        <div class="enviarFormulario">
+            <button type="submit" class="boton_register"><a href="/home"></a>Enviar</button></a>
+    <button type="reset" class="boton_register">Borrar </button>
+        </div>
+
+
+    </form>
+    <%- include('partials/footer') %>
+
+
+
+
+
+
+
+
+
+
+
+</body>
